@@ -1,0 +1,23 @@
+﻿<Window x:Class="FileSend.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Path"></Label>
+                <TextBox Name="tbxPath" Width="200" Height="40"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Content="IP"></Label>
+                <TextBox Name="tbxIP" Width="200" Height="40"/>
+                <Label Content="Port"></Label>
+                <TextBox Name="tbxPort" Width="200" Height="40"/>
+            </StackPanel>
+            <Button Name="btnSend" Width="200" Height="200" 
+                    Content="Send" Click="btnSend_Click_1"/>
+            <Button Name="btnClose" Width="200" Height="40" Content="Close"/>
+        </StackPanel>
+    </Grid>
+</Window>
